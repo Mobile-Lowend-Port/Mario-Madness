@@ -1,9 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="gfland.png"><SubTexture name="gfland idle0000" x="0" y="0" width="115" height="122" frameX="0" frameY="0" frameWidth="115" frameHeight="122" />
-<SubTexture name="gfland idle0001" x="115" y="0" width="115" height="122" frameX="0" frameY="0" frameWidth="115" frameHeight="122" />
-<SubTexture name="gfland idle0002" x="0" y="122" width="115" height="122" frameX="0" frameY="0" frameWidth="115" frameHeight="122" />
-<SubTexture name="gfland idle0003" x="115" y="122" width="115" height="122" frameX="0" frameY="0" frameWidth="115" frameHeight="122" />
-<SubTexture name="gfland idle0004" x="0" y="244" width="115" height="122" frameX="0" frameY="0" frameWidth="115" frameHeight="122" />
-<SubTexture name="gfland idle0005" x="115" y="244" width="115" height="122" frameX="0" frameY="0" frameWidth="115" frameHeight="122" />
-<SubTexture name="gfland idle0006" x="0" y="366" width="115" height="122" frameX="0" frameY="0" frameWidth="115" frameHeight="122" />
+<TextureAtlas imagePath="gfland.png">
+<SubTexture name="gfland idle0000" x="177" y="0" width="59" height="91" frameX="-28" frameY="-29" frameWidth="115" frameHeight="122" />
+<SubTexture name="gfland idle0001" x="0" y="94" width="59" height="90" frameX="-28" frameY="-30" frameWidth="115" frameHeight="122" />
+<SubTexture name="gfland idle0002" x="118" y="94" width="59" height="88" frameX="-28" frameY="-32" frameWidth="115" frameHeight="122" />
+<SubTexture name="gfland idle0003" x="59" y="94" width="59" height="90" frameX="-28" frameY="-30" frameWidth="115" frameHeight="122" />
+<SubTexture name="gfland idle0004" x="59" y="0" width="59" height="92" frameX="-28" frameY="-28" frameWidth="115" frameHeight="122" />
+<SubTexture name="gfland idle0005" x="0" y="0" width="59" height="94" frameX="-28" frameY="-26" frameWidth="115" frameHeight="122" />
+<SubTexture name="gfland idle0006" x="118" y="0" width="59" height="92" frameX="-28" frameY="-28" frameWidth="115" frameHeight="122" />
 </TextureAtlas>

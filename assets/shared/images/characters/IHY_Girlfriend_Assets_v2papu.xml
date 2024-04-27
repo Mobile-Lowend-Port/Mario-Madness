@@ -1,45 +1,33 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <TextureAtlas imagePath="IHY_Girlfriend_Assets_v2papu.png">
-	<!-- Created with Adobe Animate version 19.2.1.408 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="GF Dancing Beat0000" x="0" y="0" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0001" x="428" y="0" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0002" x="856" y="0" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0003" x="1284" y="0" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0004" x="1284" y="0" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0005" x="0" y="528" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0006" x="0" y="528" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0007" x="0" y="528" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0008" x="428" y="528" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0009" x="428" y="528" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0010" x="428" y="528" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0011" x="428" y="528" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0012" x="856" y="528" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0013" x="856" y="528" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0014" x="856" y="528" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0015" x="1284" y="528" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0016" x="0" y="1056" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0017" x="428" y="1056" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0018" x="856" y="1056" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0019" x="856" y="1056" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0020" x="1284" y="1056" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0021" x="1284" y="1056" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0022" x="1284" y="1056" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0023" x="0" y="1584" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0024" x="0" y="1584" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0025" x="0" y="1584" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0026" x="0" y="1584" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0027" x="428" y="1584" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0028" x="428" y="1584" width="418" height="518"/>
-	<SubTexture name="GF Dancing Beat0029" x="428" y="1584" width="418" height="518"/>
-	<SubTexture name="gf sad0000" x="856" y="1584" width="421" height="509"/>
-	<SubTexture name="gf sad0001" x="1287" y="1584" width="421" height="509"/>
-	<SubTexture name="gf sad0002" x="1287" y="1584" width="421" height="509"/>
-	<SubTexture name="gf sad0003" x="0" y="2112" width="421" height="509"/>
-	<SubTexture name="gf sad0004" x="0" y="2112" width="421" height="509"/>
-	<SubTexture name="gf sad0005" x="0" y="2112" width="421" height="509"/>
-	<SubTexture name="gf sad0006" x="0" y="2112" width="421" height="509"/>
-	<SubTexture name="gf sad0007" x="0" y="2112" width="421" height="509"/>
-	<SubTexture name="gf sad0008" x="0" y="2112" width="421" height="509"/>
-	<SubTexture name="gf sad0009" x="0" y="2112" width="421" height="509"/>
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0000" x="417" y="779" width="209" height="254" frameX="0" frameY="-6" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0001" x="0" y="779" width="209" height="255" frameX="0" frameY="-5" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0002" x="209" y="779" width="208" height="255" frameX="-1" frameY="-5" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0003" x="986" y="0" width="207" height="256" frameX="-1" frameY="-4" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0004" x="986" y="0" width="207" height="256" frameX="-1" frameY="-4" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0005" x="781" y="0" width="205" height="258" frameX="-1" frameY="-2" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0006" x="781" y="0" width="205" height="258" frameX="-1" frameY="-2" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0007" x="781" y="0" width="205" height="258" frameX="-1" frameY="-2" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0008" x="0" y="520" width="202" height="259" frameX="-1" frameY="-1" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0009" x="0" y="520" width="202" height="259" frameX="-1" frameY="-1" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0010" x="0" y="520" width="202" height="259" frameX="-1" frameY="-1" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0011" x="0" y="520" width="202" height="259" frameX="-1" frameY="-1" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0012" x="202" y="520" width="202" height="259" frameX="-1" frameY="-1" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0013" x="202" y="520" width="202" height="259" frameX="-1" frameY="-1" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0014" x="202" y="520" width="202" height="259" frameX="-1" frameY="-1" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0015" x="0" y="0" width="194" height="260" frameX="-1" frameY="0" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0016" x="194" y="0" width="194" height="260" frameX="-1" frameY="0" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0017" x="388" y="0" width="192" height="260" frameX="-1" frameY="0" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0018" x="0" y="260" width="192" height="260" frameX="-1" frameY="0" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0019" x="0" y="260" width="192" height="260" frameX="-1" frameY="0" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0020" x="192" y="260" width="197" height="260" frameX="-1" frameY="0" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0021" x="192" y="260" width="197" height="260" frameX="-1" frameY="0" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0022" x="192" y="260" width="197" height="260" frameX="-1" frameY="0" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0023" x="580" y="0" width="201" height="260" frameX="-1" frameY="0" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0024" x="580" y="0" width="201" height="260" frameX="-1" frameY="0" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0025" x="580" y="0" width="201" height="260" frameX="-1" frameY="0" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0026" x="580" y="0" width="201" height="260" frameX="-1" frameY="0" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0027" x="404" y="520" width="202" height="259" frameX="-1" frameY="-1" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0028" x="404" y="520" width="202" height="259" frameX="-1" frameY="-1" frameWidth="209" frameHeight="260" />
+<SubTexture name="IHY_Girlfriend_Assets_v2papu idle0029" x="404" y="520" width="202" height="259" frameX="-1" frameY="-1" frameWidth="209" frameHeight="260" />
 </TextureAtlas>

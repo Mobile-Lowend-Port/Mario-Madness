@@ -1,171 +1,96 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <TextureAtlas imagePath="Mr_Virtual_V2_Assets.png">
-	<!-- Created with Adobe Animate version 19.2.1.408 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="VAltDown0000" x="0" y="0" width="564" height="599" pivotX="1.25" pivotY="5.3"/>
-	<SubTexture name="VAltDown0001" x="574" y="0" width="561" height="598" frameX="-2" frameY="-1" frameWidth="564" frameHeight="599"/>
-	<SubTexture name="VAltDown0002" x="574" y="0" width="561" height="598" frameX="-2" frameY="-1" frameWidth="564" frameHeight="599"/>
-	<SubTexture name="VAltDown0003" x="1145" y="0" width="553" height="594" frameX="-5" frameY="-5" frameWidth="564" frameHeight="599"/>
-	<SubTexture name="VAltDown0004" x="1145" y="0" width="553" height="594" frameX="-5" frameY="-5" frameWidth="564" frameHeight="599"/>
-	<SubTexture name="VAltDown0005" x="1708" y="0" width="551" height="594" frameX="-6" frameY="-5" frameWidth="564" frameHeight="599"/>
-	<SubTexture name="VAltDown0006" x="1708" y="0" width="551" height="594" frameX="-6" frameY="-5" frameWidth="564" frameHeight="599"/>
-	<SubTexture name="VAltDown0007" x="2269" y="0" width="551" height="594" frameX="-6" frameY="-5" frameWidth="564" frameHeight="599"/>
-	<SubTexture name="VAltDown0008" x="2269" y="0" width="551" height="594" frameX="-6" frameY="-5" frameWidth="564" frameHeight="599"/>
-	<SubTexture name="VAltDown0009" x="2269" y="0" width="551" height="594" frameX="-6" frameY="-5" frameWidth="564" frameHeight="599"/>
-	<SubTexture name="VAltDown0010" x="2269" y="0" width="551" height="594" frameX="-6" frameY="-5" frameWidth="564" frameHeight="599"/>
-	<SubTexture name="VAltDown0011" x="2269" y="0" width="551" height="594" frameX="-6" frameY="-5" frameWidth="564" frameHeight="599"/>
-	<SubTexture name="VAltDown0012" x="2269" y="0" width="551" height="594" frameX="-6" frameY="-5" frameWidth="564" frameHeight="599"/>
-	<SubTexture name="VAltDown0013" x="2269" y="0" width="551" height="594" frameX="-6" frameY="-5" frameWidth="564" frameHeight="599"/>
-	<SubTexture name="VAltDown0014" x="2269" y="0" width="551" height="594" frameX="-6" frameY="-5" frameWidth="564" frameHeight="599"/>
-	<SubTexture name="VAltIdle0000" x="2830" y="0" width="460" height="720" pivotX="8.15" pivotY="0" frameX="0" frameY="-8" frameWidth="460" frameHeight="729"/>
-	<SubTexture name="VAltIdle0001" x="3300" y="0" width="445" height="719" frameX="-7" frameY="-9" frameWidth="460" frameHeight="729"/>
-	<SubTexture name="VAltIdle0002" x="3300" y="0" width="445" height="719" frameX="-7" frameY="-9" frameWidth="460" frameHeight="729"/>
-	<SubTexture name="VAltIdle0003" x="3755" y="0" width="438" height="723" frameX="-10" frameY="-5" frameWidth="460" frameHeight="729"/>
-	<SubTexture name="VAltIdle0004" x="3755" y="0" width="438" height="723" frameX="-10" frameY="-5" frameWidth="460" frameHeight="729"/>
-	<SubTexture name="VAltIdle0005" x="4203" y="0" width="439" height="726" frameX="-8" frameY="-3" frameWidth="460" frameHeight="729"/>
-	<SubTexture name="VAltIdle0006" x="4203" y="0" width="439" height="726" frameX="-8" frameY="-3" frameWidth="460" frameHeight="729"/>
-	<SubTexture name="VAltIdle0007" x="4203" y="0" width="439" height="726" frameX="-8" frameY="-3" frameWidth="460" frameHeight="729"/>
-	<SubTexture name="VAltIdle0008" x="4652" y="0" width="439" height="729" frameX="-8" frameY="0" frameWidth="460" frameHeight="729"/>
-	<SubTexture name="VAltIdle0009" x="4652" y="0" width="439" height="729" frameX="-8" frameY="0" frameWidth="460" frameHeight="729"/>
-	<SubTexture name="VAltIdle0010" x="4652" y="0" width="439" height="729" frameX="-8" frameY="0" frameWidth="460" frameHeight="729"/>
-	<SubTexture name="VAltIdle0011" x="5101" y="0" width="440" height="729" frameX="-8" frameY="0" frameWidth="460" frameHeight="729"/>
-	<SubTexture name="VAltIdle0012" x="5101" y="0" width="440" height="729" frameX="-8" frameY="0" frameWidth="460" frameHeight="729"/>
-	<SubTexture name="VAltIdle0013" x="5101" y="0" width="440" height="729" frameX="-8" frameY="0" frameWidth="460" frameHeight="729"/>
-	<SubTexture name="VAltIdle0014" x="5101" y="0" width="440" height="729" frameX="-8" frameY="0" frameWidth="460" frameHeight="729"/>
-	<SubTexture name="VAltLeft0000" x="5551" y="0" width="641" height="645" pivotX="-73.6" pivotY="-81.25" frameX="-14" frameY="-10" frameWidth="655" frameHeight="656"/>
-	<SubTexture name="VAltLeft0001" x="6202" y="0" width="655" height="644" frameX="0" frameY="-11" frameWidth="655" frameHeight="656"/>
-	<SubTexture name="VAltLeft0002" x="6202" y="0" width="655" height="644" frameX="0" frameY="-11" frameWidth="655" frameHeight="656"/>
-	<SubTexture name="VAltLeft0003" x="6867" y="0" width="645" height="654" frameX="-8" frameY="-2" frameWidth="655" frameHeight="656"/>
-	<SubTexture name="VAltLeft0004" x="6867" y="0" width="645" height="654" frameX="-8" frameY="-2" frameWidth="655" frameHeight="656"/>
-	<SubTexture name="VAltLeft0005" x="7522" y="0" width="639" height="656" frameX="-13" frameY="0" frameWidth="655" frameHeight="656"/>
-	<SubTexture name="VAltLeft0006" x="7522" y="0" width="639" height="656" frameX="-13" frameY="0" frameWidth="655" frameHeight="656"/>
-	<SubTexture name="VAltLeft0007" x="7522" y="0" width="639" height="656" frameX="-13" frameY="0" frameWidth="655" frameHeight="656"/>
-	<SubTexture name="VAltLeft0008" x="0" y="739" width="638" height="656" frameX="-14" frameY="0" frameWidth="655" frameHeight="656"/>
-	<SubTexture name="VAltLeft0009" x="0" y="739" width="638" height="656" frameX="-14" frameY="0" frameWidth="655" frameHeight="656"/>
-	<SubTexture name="VAltLeft0010" x="0" y="739" width="638" height="656" frameX="-14" frameY="0" frameWidth="655" frameHeight="656"/>
-	<SubTexture name="VAltLeft0011" x="0" y="739" width="638" height="656" frameX="-14" frameY="0" frameWidth="655" frameHeight="656"/>
-	<SubTexture name="VAltLeft0012" x="0" y="739" width="638" height="656" frameX="-14" frameY="0" frameWidth="655" frameHeight="656"/>
-	<SubTexture name="VAltLeft0013" x="0" y="739" width="638" height="656" frameX="-14" frameY="0" frameWidth="655" frameHeight="656"/>
-	<SubTexture name="VAltLeft0014" x="0" y="739" width="638" height="656" frameX="-14" frameY="0" frameWidth="655" frameHeight="656"/>
-	<SubTexture name="VAltRight0000" x="648" y="739" width="609" height="614" pivotX="0" pivotY="-10.5" frameX="0" frameY="0" frameWidth="657" frameHeight="614"/>
-	<SubTexture name="VAltRight0001" x="1267" y="739" width="629" height="600" frameX="0" frameY="-14" frameWidth="657" frameHeight="614"/>
-	<SubTexture name="VAltRight0002" x="1267" y="739" width="629" height="600" frameX="0" frameY="-14" frameWidth="657" frameHeight="614"/>
-	<SubTexture name="VAltRight0003" x="1906" y="739" width="657" height="606" frameX="0" frameY="-8" frameWidth="657" frameHeight="614"/>
-	<SubTexture name="VAltRight0004" x="1906" y="739" width="657" height="606" frameX="0" frameY="-8" frameWidth="657" frameHeight="614"/>
-	<SubTexture name="VAltRight0005" x="2573" y="739" width="651" height="607" frameX="0" frameY="-7" frameWidth="657" frameHeight="614"/>
-	<SubTexture name="VAltRight0006" x="2573" y="739" width="651" height="607" frameX="0" frameY="-7" frameWidth="657" frameHeight="614"/>
-	<SubTexture name="VAltRight0007" x="3234" y="739" width="648" height="607" frameX="0" frameY="-7" frameWidth="657" frameHeight="614"/>
-	<SubTexture name="VAltRight0008" x="3234" y="739" width="648" height="607" frameX="0" frameY="-7" frameWidth="657" frameHeight="614"/>
-	<SubTexture name="VAltRight0009" x="3234" y="739" width="648" height="607" frameX="0" frameY="-7" frameWidth="657" frameHeight="614"/>
-	<SubTexture name="VAltRight0010" x="3234" y="739" width="648" height="607" frameX="0" frameY="-7" frameWidth="657" frameHeight="614"/>
-	<SubTexture name="VAltRight0011" x="3234" y="739" width="648" height="607" frameX="0" frameY="-7" frameWidth="657" frameHeight="614"/>
-	<SubTexture name="VAltRight0012" x="3234" y="739" width="648" height="607" frameX="0" frameY="-7" frameWidth="657" frameHeight="614"/>
-	<SubTexture name="VAltRight0013" x="3234" y="739" width="648" height="607" frameX="0" frameY="-7" frameWidth="657" frameHeight="614"/>
-	<SubTexture name="VAltRight0014" x="3234" y="739" width="648" height="607" frameX="0" frameY="-7" frameWidth="657" frameHeight="614"/>
-	<SubTexture name="VAltUp0000" x="3892" y="739" width="459" height="869" pivotX="-9.75" pivotY="-4.45" frameX="-6" frameY="0" frameWidth="466" frameHeight="869"/>
-	<SubTexture name="VAltUp0001" x="4361" y="739" width="461" height="869" frameX="0" frameY="0" frameWidth="466" frameHeight="869"/>
-	<SubTexture name="VAltUp0002" x="4361" y="739" width="461" height="869" frameX="0" frameY="0" frameWidth="466" frameHeight="869"/>
-	<SubTexture name="VAltUp0003" x="4832" y="739" width="461" height="853" frameX="-2" frameY="-16" frameWidth="466" frameHeight="869"/>
-	<SubTexture name="VAltUp0004" x="4832" y="739" width="461" height="853" frameX="-2" frameY="-16" frameWidth="466" frameHeight="869"/>
-	<SubTexture name="VAltUp0005" x="5303" y="739" width="459" height="850" frameX="-7" frameY="-19" frameWidth="466" frameHeight="869"/>
-	<SubTexture name="VAltUp0006" x="5303" y="739" width="459" height="850" frameX="-7" frameY="-19" frameWidth="466" frameHeight="869"/>
-	<SubTexture name="VAltUp0007" x="5772" y="739" width="458" height="850" frameX="-8" frameY="-19" frameWidth="466" frameHeight="869"/>
-	<SubTexture name="VAltUp0008" x="5772" y="739" width="458" height="850" frameX="-8" frameY="-19" frameWidth="466" frameHeight="869"/>
-	<SubTexture name="VAltUp0009" x="5772" y="739" width="458" height="850" frameX="-8" frameY="-19" frameWidth="466" frameHeight="869"/>
-	<SubTexture name="VAltUp0010" x="5772" y="739" width="458" height="850" frameX="-8" frameY="-19" frameWidth="466" frameHeight="869"/>
-	<SubTexture name="VAltUp0011" x="5772" y="739" width="458" height="850" frameX="-8" frameY="-19" frameWidth="466" frameHeight="869"/>
-	<SubTexture name="VAltUp0012" x="5772" y="739" width="458" height="850" frameX="-8" frameY="-19" frameWidth="466" frameHeight="869"/>
-	<SubTexture name="VAltUp0013" x="5772" y="739" width="458" height="850" frameX="-8" frameY="-19" frameWidth="466" frameHeight="869"/>
-	<SubTexture name="VAltUp0014" x="5772" y="739" width="458" height="850" frameX="-8" frameY="-19" frameWidth="466" frameHeight="869"/>
-	<SubTexture name="VDown0000" x="6240" y="739" width="1698" height="718" pivotX="13.3" pivotY="2" frameX="0" frameY="-15" frameWidth="1698" frameHeight="832"/>
-	<SubTexture name="VDown0001" x="0" y="1618" width="1676" height="822" frameX="-11" frameY="-10" frameWidth="1698" frameHeight="832"/>
-	<SubTexture name="VDown0002" x="0" y="1618" width="1676" height="822" frameX="-11" frameY="-10" frameWidth="1698" frameHeight="832"/>
-	<SubTexture name="VDown0003" x="1686" y="1618" width="1658" height="796" frameX="-19" frameY="-2" frameWidth="1698" frameHeight="832"/>
-	<SubTexture name="VDown0004" x="1686" y="1618" width="1658" height="796" frameX="-19" frameY="-2" frameWidth="1698" frameHeight="832"/>
-	<SubTexture name="VDown0005" x="3354" y="1618" width="1668" height="768" frameX="-13" frameY="0" frameWidth="1698" frameHeight="832"/>
-	<SubTexture name="VDown0006" x="3354" y="1618" width="1668" height="768" frameX="-13" frameY="0" frameWidth="1698" frameHeight="832"/>
-	<SubTexture name="VDown0007" x="3354" y="1618" width="1668" height="768" frameX="-13" frameY="0" frameWidth="1698" frameHeight="832"/>
-	<SubTexture name="VDown0008" x="3354" y="1618" width="1668" height="768" frameX="-13" frameY="0" frameWidth="1698" frameHeight="832"/>
-	<SubTexture name="VDown0009" x="3354" y="1618" width="1668" height="768" frameX="-13" frameY="0" frameWidth="1698" frameHeight="832"/>
-	<SubTexture name="VIdle0000" x="5032" y="1618" width="831" height="1049" pivotX="5.3" pivotY="0" frameX="-5" frameY="-25" frameWidth="837" frameHeight="1077"/>
-	<SubTexture name="VIdle0001" x="5873" y="1618" width="835" height="1044" frameX="-2" frameY="-30" frameWidth="837" frameHeight="1077"/>
-	<SubTexture name="VIdle0002" x="5873" y="1618" width="835" height="1044" frameX="-2" frameY="-30" frameWidth="837" frameHeight="1077"/>
-	<SubTexture name="VIdle0003" x="6718" y="1618" width="834" height="1049" frameX="0" frameY="-26" frameWidth="837" frameHeight="1077"/>
-	<SubTexture name="VIdle0004" x="6718" y="1618" width="834" height="1049" frameX="0" frameY="-26" frameWidth="837" frameHeight="1077"/>
-	<SubTexture name="VIdle0005" x="0" y="2677" width="825" height="1067" frameX="-2" frameY="-9" frameWidth="837" frameHeight="1077"/>
-	<SubTexture name="VIdle0006" x="0" y="2677" width="825" height="1067" frameX="-2" frameY="-9" frameWidth="837" frameHeight="1077"/>
-	<SubTexture name="VIdle0007" x="0" y="2677" width="825" height="1067" frameX="-2" frameY="-9" frameWidth="837" frameHeight="1077"/>
-	<SubTexture name="VIdle0008" x="835" y="2677" width="821" height="1075" frameX="-3" frameY="-2" frameWidth="837" frameHeight="1077"/>
-	<SubTexture name="VIdle0009" x="835" y="2677" width="821" height="1075" frameX="-3" frameY="-2" frameWidth="837" frameHeight="1077"/>
-	<SubTexture name="VIdle0010" x="835" y="2677" width="821" height="1075" frameX="-3" frameY="-2" frameWidth="837" frameHeight="1077"/>
-	<SubTexture name="VIdle0011" x="1666" y="2677" width="818" height="1077" frameX="-5" frameY="0" frameWidth="837" frameHeight="1077"/>
-	<SubTexture name="VIdle0012" x="1666" y="2677" width="818" height="1077" frameX="-5" frameY="0" frameWidth="837" frameHeight="1077"/>
-	<SubTexture name="VIdle0013" x="1666" y="2677" width="818" height="1077" frameX="-5" frameY="0" frameWidth="837" frameHeight="1077"/>
-	<SubTexture name="VIdle0014" x="1666" y="2677" width="818" height="1077" frameX="-5" frameY="0" frameWidth="837" frameHeight="1077"/>
-	<SubTexture name="VLeft0000" x="2494" y="2677" width="1169" height="1133" pivotX="-27.4" pivotY="-53" frameX="-4" frameY="-17" frameWidth="1173" frameHeight="1150"/>
-	<SubTexture name="VLeft0001" x="3673" y="2677" width="1173" height="1132" frameX="0" frameY="-18" frameWidth="1173" frameHeight="1150"/>
-	<SubTexture name="VLeft0002" x="3673" y="2677" width="1173" height="1132" frameX="0" frameY="-18" frameWidth="1173" frameHeight="1150"/>
-	<SubTexture name="VLeft0003" x="4856" y="2677" width="1168" height="1150" frameX="-5" frameY="0" frameWidth="1173" frameHeight="1150"/>
-	<SubTexture name="VLeft0004" x="4856" y="2677" width="1168" height="1150" frameX="-5" frameY="0" frameWidth="1173" frameHeight="1150"/>
-	<SubTexture name="VLeft0005" x="6034" y="2677" width="1162" height="1150" frameX="-10" frameY="0" frameWidth="1173" frameHeight="1150"/>
-	<SubTexture name="VLeft0006" x="6034" y="2677" width="1162" height="1150" frameX="-10" frameY="0" frameWidth="1173" frameHeight="1150"/>
-	<SubTexture name="VLeft0007" x="6034" y="2677" width="1162" height="1150" frameX="-10" frameY="0" frameWidth="1173" frameHeight="1150"/>
-	<SubTexture name="VLeft0008" x="6034" y="2677" width="1162" height="1150" frameX="-10" frameY="0" frameWidth="1173" frameHeight="1150"/>
-	<SubTexture name="VLeft0009" x="6034" y="2677" width="1162" height="1150" frameX="-10" frameY="0" frameWidth="1173" frameHeight="1150"/>
-	<SubTexture name="VLeft0010" x="6034" y="2677" width="1162" height="1150" frameX="-10" frameY="0" frameWidth="1173" frameHeight="1150"/>
-	<SubTexture name="VLeft0011" x="6034" y="2677" width="1162" height="1150" frameX="-10" frameY="0" frameWidth="1173" frameHeight="1150"/>
-	<SubTexture name="VLeft0012" x="6034" y="2677" width="1162" height="1150" frameX="-10" frameY="0" frameWidth="1173" frameHeight="1150"/>
-	<SubTexture name="VLeft0013" x="6034" y="2677" width="1162" height="1150" frameX="-10" frameY="0" frameWidth="1173" frameHeight="1150"/>
-	<SubTexture name="VLeft0014" x="6034" y="2677" width="1162" height="1150" frameX="-10" frameY="0" frameWidth="1173" frameHeight="1150"/>
-	<SubTexture name="VRight0000" x="0" y="3837" width="1260" height="1045" pivotX="231.35" pivotY="32.85" frameX="-45" frameY="0" frameWidth="1331" frameHeight="1045"/>
-	<SubTexture name="VRight0001" x="1270" y="3837" width="1271" height="1036" frameX="-37" frameY="-9" frameWidth="1331" frameHeight="1045"/>
-	<SubTexture name="VRight0002" x="1270" y="3837" width="1271" height="1036" frameX="-37" frameY="-9" frameWidth="1331" frameHeight="1045"/>
-	<SubTexture name="VRight0003" x="2551" y="3837" width="1324" height="1032" frameX="-2" frameY="-13" frameWidth="1331" frameHeight="1045"/>
-	<SubTexture name="VRight0004" x="2551" y="3837" width="1324" height="1032" frameX="-2" frameY="-13" frameWidth="1331" frameHeight="1045"/>
-	<SubTexture name="VRight0005" x="3885" y="3837" width="1331" height="1035" frameX="0" frameY="-10" frameWidth="1331" frameHeight="1045"/>
-	<SubTexture name="VRight0006" x="3885" y="3837" width="1331" height="1035" frameX="0" frameY="-10" frameWidth="1331" frameHeight="1045"/>
-	<SubTexture name="VRight0007" x="3885" y="3837" width="1331" height="1035" frameX="0" frameY="-10" frameWidth="1331" frameHeight="1045"/>
-	<SubTexture name="VRight0008" x="3885" y="3837" width="1331" height="1035" frameX="0" frameY="-10" frameWidth="1331" frameHeight="1045"/>
-	<SubTexture name="VRight0009" x="3885" y="3837" width="1331" height="1035" frameX="0" frameY="-10" frameWidth="1331" frameHeight="1045"/>
-	<SubTexture name="VTransformation0000" x="5226" y="3837" width="441" height="730" pivotX="0.25" pivotY="0" frameX="-125" frameY="-293" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0001" x="5226" y="3837" width="441" height="730" frameX="-125" frameY="-293" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0002" x="5226" y="3837" width="441" height="730" frameX="-125" frameY="-293" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0003" x="5226" y="3837" width="441" height="730" frameX="-125" frameY="-293" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0004" x="5226" y="3837" width="441" height="730" frameX="-125" frameY="-293" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0005" x="5677" y="3837" width="444" height="729" frameX="-125" frameY="-294" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0006" x="5677" y="3837" width="444" height="729" frameX="-125" frameY="-294" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0007" x="6131" y="3837" width="448" height="719" frameX="-138" frameY="-307" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0008" x="6131" y="3837" width="448" height="719" frameX="-138" frameY="-307" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0009" x="6131" y="3837" width="448" height="719" frameX="-138" frameY="-307" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0010" x="6589" y="3837" width="461" height="703" frameX="-134" frameY="-314" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0011" x="6589" y="3837" width="461" height="703" frameX="-134" frameY="-314" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0012" x="7060" y="3837" width="632" height="753" frameX="-76" frameY="-287" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0013" x="7060" y="3837" width="632" height="753" frameX="-76" frameY="-287" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0014" x="0" y="4892" width="719" height="905" frameX="-31" frameY="-153" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0015" x="0" y="4892" width="719" height="905" frameX="-31" frameY="-153" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0016" x="729" y="4892" width="752" height="985" frameX="-26" frameY="-81" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0017" x="729" y="4892" width="752" height="985" frameX="-26" frameY="-81" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0018" x="729" y="4892" width="752" height="985" frameX="-26" frameY="-81" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0019" x="1491" y="4892" width="815" height="1044" frameX="0" frameY="-28" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0020" x="1491" y="4892" width="815" height="1044" frameX="0" frameY="-28" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0021" x="1491" y="4892" width="815" height="1044" frameX="0" frameY="-28" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0022" x="2316" y="4892" width="818" height="1076" frameX="0" frameY="-1" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0023" x="2316" y="4892" width="818" height="1076" frameX="0" frameY="-1" frameWidth="818" frameHeight="1077"/>
-	<SubTexture name="VTransformation0024" x="3144" y="4892" width="818" height="1077"/>
-	<SubTexture name="VTransformation0025" x="3144" y="4892" width="818" height="1077"/>
-	<SubTexture name="VTransformation0026" x="3144" y="4892" width="818" height="1077"/>
-	<SubTexture name="VTransformation0027" x="3144" y="4892" width="818" height="1077"/>
-	<SubTexture name="VTransformation0028" x="3144" y="4892" width="818" height="1077"/>
-	<SubTexture name="VTransformation0029" x="3144" y="4892" width="818" height="1077"/>
-	<SubTexture name="VTransformation0030" x="3144" y="4892" width="818" height="1077"/>
-	<SubTexture name="VUp0000" x="3972" y="4892" width="878" height="1804" pivotX="-3.05" pivotY="-49.25" frameX="-16" frameY="-21" frameWidth="910" frameHeight="1825"/>
-	<SubTexture name="VUp0001" x="4860" y="4892" width="876" height="1824" frameX="-23" frameY="0" frameWidth="910" frameHeight="1825"/>
-	<SubTexture name="VUp0002" x="4860" y="4892" width="876" height="1824" frameX="-23" frameY="0" frameWidth="910" frameHeight="1825"/>
-	<SubTexture name="VUp0003" x="5746" y="4892" width="894" height="1796" frameX="-16" frameY="-23" frameWidth="910" frameHeight="1825"/>
-	<SubTexture name="VUp0004" x="5746" y="4892" width="894" height="1796" frameX="-16" frameY="-23" frameWidth="910" frameHeight="1825"/>
-	<SubTexture name="VUp0005" x="6650" y="4892" width="910" height="1776" frameX="0" frameY="-42" frameWidth="910" frameHeight="1825"/>
-	<SubTexture name="VUp0006" x="6650" y="4892" width="910" height="1776" frameX="0" frameY="-42" frameWidth="910" frameHeight="1825"/>
-	<SubTexture name="VUp0007" x="6650" y="4892" width="910" height="1776" frameX="0" frameY="-42" frameWidth="910" frameHeight="1825"/>
-	<SubTexture name="VUp0008" x="6650" y="4892" width="910" height="1776" frameX="0" frameY="-42" frameWidth="910" frameHeight="1825"/>
-	<SubTexture name="VUp0009" x="6650" y="4892" width="910" height="1776" frameX="0" frameY="-42" frameWidth="910" frameHeight="1825"/>
+<SubTexture name="Mr_Virtual_V2_Assets VAltDown0000" x="2269" y="617" width="192" height="204" frameX="0" frameY="0" frameWidth="192" frameHeight="204" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltDown0001" x="2269" y="821" width="192" height="204" frameX="0" frameY="0" frameWidth="192" frameHeight="204" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltDown0002" x="2269" y="821" width="192" height="204" frameX="0" frameY="0" frameWidth="192" frameHeight="204" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltDown0003" x="2269" y="1025" width="188" height="203" frameX="-2" frameY="-1" frameWidth="192" frameHeight="204" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltIdle0000" x="1890" y="1728" width="156" height="246" frameX="0" frameY="-2" frameWidth="156" frameHeight="248" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltIdle0001" x="577" y="2008" width="152" height="245" frameX="-2" frameY="-3" frameWidth="156" frameHeight="248" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltIdle0002" x="577" y="2008" width="152" height="245" frameX="-2" frameY="-3" frameWidth="156" frameHeight="248" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltIdle0003" x="2120" y="0" width="149" height="246" frameX="-3" frameY="-2" frameWidth="156" frameHeight="248" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltIdle0004" x="2120" y="0" width="149" height="246" frameX="-3" frameY="-2" frameWidth="156" frameHeight="248" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltIdle0005" x="1740" y="1728" width="150" height="247" frameX="-2" frameY="-1" frameWidth="156" frameHeight="248" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltIdle0006" x="1740" y="1728" width="150" height="247" frameX="-2" frameY="-1" frameWidth="156" frameHeight="248" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltIdle0007" x="1740" y="1728" width="150" height="247" frameX="-2" frameY="-1" frameWidth="156" frameHeight="248" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltIdle0008" x="1440" y="1728" width="150" height="248" frameX="-2" frameY="0" frameWidth="156" frameHeight="248" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltIdle0009" x="1440" y="1728" width="150" height="248" frameX="-2" frameY="0" frameWidth="156" frameHeight="248" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltIdle0010" x="1440" y="1728" width="150" height="248" frameX="-2" frameY="0" frameWidth="156" frameHeight="248" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltIdle0011" x="1590" y="1728" width="150" height="248" frameX="-2" frameY="0" frameWidth="156" frameHeight="248" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltIdle0012" x="1590" y="1728" width="150" height="248" frameX="-2" frameY="0" frameWidth="156" frameHeight="248" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltIdle0013" x="1590" y="1728" width="150" height="248" frameX="-2" frameY="0" frameWidth="156" frameHeight="248" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltIdle0014" x="1590" y="1728" width="150" height="248" frameX="-2" frameY="0" frameWidth="156" frameHeight="248" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltLeft0000" x="1198" y="2008" width="219" height="220" frameX="-4" frameY="-3" frameWidth="223" frameHeight="223" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltLeft0001" x="1640" y="2008" width="223" height="219" frameX="0" frameY="-4" frameWidth="223" frameHeight="223" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltLeft0002" x="1417" y="2008" width="223" height="220" frameX="0" frameY="-3" frameWidth="223" frameHeight="223" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltLeft0003" x="901" y="391" width="221" height="223" frameX="-2" frameY="0" frameWidth="223" frameHeight="223" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltRight0000" x="1863" y="2008" width="207" height="209" frameX="0" frameY="0" frameWidth="223" frameHeight="209" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltRight0001" x="2269" y="207" width="214" height="205" frameX="0" frameY="-4" frameWidth="223" frameHeight="209" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltRight0002" x="2269" y="412" width="214" height="205" frameX="0" frameY="-4" frameWidth="223" frameHeight="209" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltRight0003" x="2269" y="0" width="223" height="207" frameX="0" frameY="-2" frameWidth="223" frameHeight="209" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltUp0000" x="1863" y="644" width="156" height="295" frameX="-2" frameY="0" frameWidth="158" frameHeight="295" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltUp0001" x="1863" y="939" width="156" height="295" frameX="0" frameY="0" frameWidth="158" frameHeight="295" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltUp0002" x="1863" y="939" width="156" height="295" frameX="0" frameY="0" frameWidth="158" frameHeight="295" />
+<SubTexture name="Mr_Virtual_V2_Assets VAltUp0003" x="1863" y="1234" width="158" height="290" frameX="0" frameY="-5" frameWidth="158" frameHeight="295" />
+<SubTexture name="Mr_Virtual_V2_Assets VDown0000" x="0" y="2008" width="577" height="246" frameX="0" frameY="-4" frameWidth="577" frameHeight="283" />
+<SubTexture name="Mr_Virtual_V2_Assets VDown0001" x="0" y="1728" width="571" height="280" frameX="-3" frameY="-3" frameWidth="577" frameHeight="283" />
+<SubTexture name="Mr_Virtual_V2_Assets VDown0002" x="0" y="1728" width="571" height="280" frameX="-3" frameY="-3" frameWidth="577" frameHeight="283" />
+<SubTexture name="Mr_Virtual_V2_Assets VDown0003" x="571" y="1728" width="565" height="272" frameX="-6" frameY="0" frameWidth="577" frameHeight="283" />
+<SubTexture name="Mr_Virtual_V2_Assets VIdle0000" x="1120" y="1006" width="284" height="358" frameX="-1" frameY="-8" frameWidth="285" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VIdle0001" x="1578" y="715" width="285" height="356" frameX="0" frameY="-10" frameWidth="285" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VIdle0002" x="1578" y="715" width="285" height="356" frameX="0" frameY="-10" frameWidth="285" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VIdle0003" x="1578" y="0" width="285" height="358" frameX="0" frameY="-8" frameWidth="285" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VIdle0004" x="1578" y="358" width="285" height="357" frameX="0" frameY="-8" frameWidth="285" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VIdle0005" x="838" y="1006" width="282" height="363" frameX="0" frameY="-3" frameWidth="285" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VIdle0006" x="556" y="1006" width="282" height="364" frameX="0" frameY="-2" frameWidth="285" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VIdle0007" x="556" y="1006" width="282" height="364" frameX="0" frameY="-2" frameWidth="285" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VIdle0008" x="797" y="621" width="281" height="366" frameX="0" frameY="0" frameWidth="285" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VIdle0009" x="797" y="621" width="281" height="366" frameX="0" frameY="0" frameWidth="285" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VIdle0010" x="797" y="621" width="281" height="366" frameX="0" frameY="0" frameWidth="285" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VIdle0011" x="1298" y="0" width="280" height="366" frameX="-1" frameY="0" frameWidth="285" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VIdle0012" x="1298" y="0" width="280" height="366" frameX="-1" frameY="0" frameWidth="285" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VIdle0013" x="1298" y="0" width="280" height="366" frameX="-1" frameY="0" frameWidth="285" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VIdle0014" x="1298" y="0" width="280" height="366" frameX="-1" frameY="0" frameWidth="285" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VLeft0000" x="0" y="621" width="398" height="385" frameX="-1" frameY="-6" frameWidth="399" frameHeight="391" />
+<SubTexture name="Mr_Virtual_V2_Assets VLeft0001" x="398" y="621" width="399" height="385" frameX="0" frameY="-6" frameWidth="399" frameHeight="391" />
+<SubTexture name="Mr_Virtual_V2_Assets VLeft0002" x="398" y="621" width="399" height="385" frameX="0" frameY="-6" frameWidth="399" frameHeight="391" />
+<SubTexture name="Mr_Virtual_V2_Assets VLeft0003" x="901" y="0" width="397" height="391" frameX="-2" frameY="0" frameWidth="399" frameHeight="391" />
+<SubTexture name="Mr_Virtual_V2_Assets VRight0000" x="278" y="1372" width="430" height="355" frameX="-15" frameY="0" frameWidth="453" frameHeight="355" />
+<SubTexture name="Mr_Virtual_V2_Assets VRight0001" x="708" y="1372" width="433" height="353" frameX="-13" frameY="-2" frameWidth="453" frameHeight="355" />
+<SubTexture name="Mr_Virtual_V2_Assets VRight0002" x="708" y="1372" width="433" height="353" frameX="-13" frameY="-2" frameWidth="453" frameHeight="355" />
+<SubTexture name="Mr_Virtual_V2_Assets VRight0003" x="1141" y="1372" width="451" height="351" frameX="0" frameY="-4" frameWidth="453" frameHeight="355" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0000" x="1078" y="621" width="151" height="249" frameX="-42" frameY="-99" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0001" x="1404" y="1006" width="151" height="249" frameX="-42" frameY="-99" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0002" x="1404" y="1006" width="151" height="249" frameX="-42" frameY="-99" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0003" x="1404" y="1006" width="151" height="249" frameX="-42" frameY="-99" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0004" x="1404" y="1006" width="151" height="249" frameX="-42" frameY="-99" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0005" x="1136" y="1728" width="152" height="249" frameX="-42" frameY="-99" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0006" x="1288" y="1728" width="152" height="249" frameX="-42" frameY="-99" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0007" x="729" y="2008" width="153" height="245" frameX="-47" frameY="-104" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0008" x="729" y="2008" width="153" height="245" frameX="-47" frameY="-104" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0009" x="729" y="2008" width="153" height="245" frameX="-47" frameY="-104" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0010" x="882" y="2008" width="158" height="240" frameX="-45" frameY="-106" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0011" x="1040" y="2008" width="158" height="240" frameX="-45" frameY="-106" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0012" x="1578" y="1071" width="216" height="256" frameX="-25" frameY="-97" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0013" x="1298" y="732" width="216" height="256" frameX="-25" frameY="-97" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0014" x="1863" y="335" width="245" height="309" frameX="-10" frameY="-51" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0015" x="1863" y="335" width="245" height="309" frameX="-10" frameY="-51" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0016" x="1592" y="1372" width="257" height="335" frameX="-8" frameY="-28" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0017" x="1863" y="0" width="257" height="335" frameX="-8" frameY="-27" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0018" x="1863" y="0" width="257" height="335" frameX="-8" frameY="-27" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0019" x="0" y="1372" width="278" height="356" frameX="0" frameY="-9" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0020" x="0" y="1372" width="278" height="356" frameX="0" frameY="-9" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0021" x="0" y="1372" width="278" height="356" frameX="0" frameY="-9" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0022" x="1298" y="366" width="278" height="366" frameX="0" frameY="0" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0023" x="0" y="1006" width="278" height="366" frameX="0" frameY="0" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0024" x="278" y="1006" width="278" height="366" frameX="0" frameY="0" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0025" x="278" y="1006" width="278" height="366" frameX="0" frameY="0" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0026" x="278" y="1006" width="278" height="366" frameX="0" frameY="0" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0027" x="278" y="1006" width="278" height="366" frameX="0" frameY="0" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0028" x="278" y="1006" width="278" height="366" frameX="0" frameY="0" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0029" x="278" y="1006" width="278" height="366" frameX="0" frameY="0" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VTransformation0030" x="278" y="1006" width="278" height="366" frameX="0" frameY="0" frameWidth="278" frameHeight="366" />
+<SubTexture name="Mr_Virtual_V2_Assets VUp0000" x="298" y="0" width="299" height="614" frameX="-5" frameY="-7" frameWidth="309" frameHeight="621" />
+<SubTexture name="Mr_Virtual_V2_Assets VUp0001" x="0" y="0" width="298" height="621" frameX="-7" frameY="0" frameWidth="309" frameHeight="621" />
+<SubTexture name="Mr_Virtual_V2_Assets VUp0002" x="0" y="0" width="298" height="621" frameX="-7" frameY="0" frameWidth="309" frameHeight="621" />
+<SubTexture name="Mr_Virtual_V2_Assets VUp0003" x="597" y="0" width="304" height="611" frameX="-5" frameY="-8" frameWidth="309" frameHeight="621" />
 </TextureAtlas>
