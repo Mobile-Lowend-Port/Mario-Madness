@@ -6,7 +6,7 @@ import haxe.Timer;
 
 class OldTVShader extends FlxShader {
 	@:glFragmentSource('
-		#pragma header
+	#pragma header
 		
 		#define id vec2(0.0,1.0)
 		#define PI 3.141592653
@@ -16,14 +16,11 @@ class OldTVShader extends FlxShader {
 		
 		//prng func, from https://stackoverflow.com/a/52207531
 		
-		vec3 hash(vec3 x) {
-                vec3 k = vec3(10.0, 10.0, 20.0);
-                for(int i = 0; i < 3; i++){
-                x = mod((x / 2.0), 256.0);
-                x = x.yzx * k;
-                }        
-                return x / float(0xffffffff);
-                }
+		vec3 hash(vec3 p) {
+			p = fract(p * 0.1036);
+			p += dot(p, p.xy + 35.33);
+			return fract(vec3((p.x + p.y) * p.z, (p.y + p.x) * p.x, (p.y + p.x) * p.y));
+		}
 		
 		void main() {
 			bool flag = false;
@@ -123,8 +120,8 @@ class OldTVShader extends FlxShader {
 			}
 			
 			gl_FragColor = col;
-		}
-	')
+}
+		')
 	public function new()
 	{
 		super();
