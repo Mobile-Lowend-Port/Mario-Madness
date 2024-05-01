@@ -3,6 +3,7 @@ package;
 import flixel.FlxCamera;
 import flixel.FlxG;
 import flixel.FlxGame;
+import haxe.io.Path;
 import flixel.FlxState;
 import flixel.addons.transition.FlxTransitionableState;
 import openfl.Assets;
