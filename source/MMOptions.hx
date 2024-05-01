@@ -42,6 +42,7 @@ class MMOptions extends MusicBeatSubstate
 
 	var cosotexto:Array<String> = ['idk', 'sexo'];
 	var txtthing:String = Paths.txt('wea');
+	public static var qqqeb9:Bool = true;
 	var noway:FlxText;
 	var noMan:FlxText;
 	var splitHex:Array<String>;
@@ -88,10 +89,13 @@ class MMOptions extends MusicBeatSubstate
 		verText.alpha = 0; verText.y += 20;
 		FlxTween.tween(verText, {y: verText.y - 20, alpha: 1}, 1, {ease: FlxEase.circOut, startDelay: .5});
 
+		if(qqqeb9)
+		{
 		#if android
-		addVirtualPad(UP_DOWN, A_B);
-		addPadCamera();
+		addVirtualPad(UP_DOWN, A_B_C);
+		addVirtualPadCamera(false);
 		#end
+		}
 		
 		super.create();
 	}
@@ -116,6 +120,14 @@ class MMOptions extends MusicBeatSubstate
 			changeSelection(1);
 		}
 
+		#if mobile
+	 if (virtualPad.buttonC.justPressed)
+		{
+		        removeVirtualPad();
+			openSubState(new mobile.MobileControlsSubState());
+		}
+	#end
+		
 		if (controls.BACK)
 		{
 			FlxG.sound.play(Paths.sound('cancelMenu'));
@@ -139,17 +151,22 @@ class MMOptions extends MusicBeatSubstate
 			switch (options[curSelected])
 			{
 				case 'Notes':
+					qqqeb9 = false;
 					openSubState(new NotesSubstate());
 
 				case 'Controls':
+					qqqeb9 = false;
 					openSubState(new ControlsSubstate());
 
 				case 'Preferences':
+					qqqeb9 = false;
 					openSubState(new PreferencesSubstate());
 
 				case 'Mario Options':
+					qqqeb9 = false;
 					openSubState(new MarioSubstate());
 				case 'Delete Data':
+					qqqeb9 = false;
 					openSubState(new DeleteSubstate());
 			}
 		}
@@ -234,8 +251,8 @@ class NotesSubstate extends MusicBeatSubstate
 		changeSelection();
 	
 	        #if android
-		addVirtualPad(FULL, A_B_C);
-		addPadCamera();
+		addVirtualPad(LEFT_FULL, A_B_C);
+		addVirtualPadCamera(false);
 		#end
 	}
 
@@ -258,7 +275,7 @@ class NotesSubstate extends MusicBeatSubstate
 					updateValue(1);
 					FlxG.sound.play(Paths.sound('scrollMenu'));
 				}
-				else if (controls.RESET #if android || _virtualpad.buttonC.justPressed #end)
+				else if (controls.RESET #if android || virtualPad.buttonC.justPressed #end)
 				{
 					resetValue(curSelected, typeSelected);
 					FlxG.sound.play(Paths.sound('scrollMenu'));
@@ -317,7 +334,7 @@ class NotesSubstate extends MusicBeatSubstate
 				changeType(1);
 				FlxG.sound.play(Paths.sound('scrollMenu'));
 			}
-			if (controls.RESET #if android || _virtualpad.buttonC.justPressed #end)
+			if (controls.RESET #if android || virtualPad.buttonC.justPressed #end)
 			{
 				for (i in 0...3)
 				{
@@ -396,6 +413,7 @@ class NotesSubstate extends MusicBeatSubstate
 					spr.alpha = 0;
 				});
 				close();
+				MMOptions.qqqeb9 = true;
 			}
 			changingNote = false;
 			FlxG.sound.play(Paths.sound('cancelMenu'));
@@ -575,7 +593,7 @@ class ControlsSubstate extends MusicBeatSubstate
 	
 	        #if android
 		addVirtualPad(NONE, B);
-		addPadCamera();
+		addVirtualPadCamera(false);
 		#end
 	}
 
@@ -615,6 +633,7 @@ class ControlsSubstate extends MusicBeatSubstate
 					}
 				}
 				close();
+				MMOptions.qqqeb9 = true;
 				FlxG.sound.play(Paths.sound('cancelMenu'));
 			}
 
@@ -952,8 +971,8 @@ class PreferencesSubstate extends MusicBeatSubstate
 		reloadValues();
 	
 	        #if android
-		addVirtualPad(FULL, A_B);
-		addPadCamera();
+		addVirtualPad(LEFT_FULL, A_B);
+		addVirtualPadCamera(false);
 		#end
 	}
 
@@ -995,7 +1014,8 @@ class PreferencesSubstate extends MusicBeatSubstate
 				showCharacter.alpha = 0;
 			}
 			descText.alpha = 0;
-				close();
+			close();
+			MMOptions.qqqeb9 = true;
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 		}
 
@@ -1431,8 +1451,8 @@ class MarioSubstate extends MusicBeatSubstate
 		reloadValues();
 	
 	        #if android
-		addVirtualPad(FULL, A_B);
-		addPadCamera();
+		addVirtualPad(LEFT_FULL, A_B);
+		addVirtualPadCamera(false);
 		#end
 	}
 
@@ -1469,7 +1489,8 @@ class MarioSubstate extends MusicBeatSubstate
 				}
 			}
 			descText.alpha = 0;
-				close();
+			close();
+			MMOptions.qqqeb9 = true;
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 		}
 
@@ -1706,6 +1727,7 @@ class DeleteSubstate extends MusicBeatSubstate
 					FlxG.sound.play(Paths.sound('cancelMenu'));
 					FlxG.mouse.visible = false;
 				close();
+			MMOptions.qqqeb9 = true;
 				}
 			
 			if(FlxG.mouse.justPressed && delPhase <= 3 && timer == 0 && cat.angle == 0){
