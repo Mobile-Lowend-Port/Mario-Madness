@@ -14406,9 +14406,6 @@ class PlayState extends MusicBeatState
 		deathCounter = 0;
 		seenCutscene = false;
 		virtualmode = false;
-		#if android
-		androidc.visible = false;
-		#end
 
 		#if ACHIEVEMENTS_ALLOWED
 		if (achievementObj != null)
