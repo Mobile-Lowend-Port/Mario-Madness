@@ -1,38 +1,37 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="Too_Late_Luigi_Hallway.png">
-	<!-- Created with Adobe Animate version 22.0.2.168 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="tll down0000" x="5" y="5" width="1584" height="1911"/>
-	<SubTexture name="tll down0001" x="1124" y="5" width="1584" height="1911"/>
-	<SubTexture name="tll down0002" x="1124" y="5" width="1584" height="1911"/>
-	<SubTexture name="tll down0003" x="2243" y="5" width="1584" height="1911"/>
-	<SubTexture name="tll down0004" x="2243" y="5" width="1584" height="1911"/>
-	<SubTexture name="tll down0005" x="2243" y="5" width="1584" height="1911"/>
-	<SubTexture name="tll down0006" x="2243" y="5" width="1584" height="1911"/>
-	<SubTexture name="tll down0007" x="2243" y="5" width="1584" height="1911"/>
-	<SubTexture name="tll up0000" x="3362" y="5" width="1584" height="1911"/>
-	<SubTexture name="tll up0001" x="4487" y="5" width="1584" height="1911"/>
-	<SubTexture name="tll up0002" x="4487" y="5" width="1584" height="1911"/>
-	<SubTexture name="tll up0003" x="5612" y="5" width="1584" height="1911"/>
-	<SubTexture name="tll up0004" x="5612" y="5" width="1584" height="1911"/>
-	<SubTexture name="tll up0005" x="6737" y="5" width="1584" height="1911"/>
-	<SubTexture name="tll up0006" x="6737" y="5" width="1584" height="1911"/>
-	<SubTexture name="tll up0007" x="6737" y="5" width="1584" height="1911"/>
-	<SubTexture name="tll right0000" x="5" y="1926" width="1584" height="1913"/>
-	<SubTexture name="tll right0001" x="1599" y="1926" width="1584" height="1913"/>
-	<SubTexture name="tll right0002" x="1599" y="1926" width="1584" height="1913"/>
-	<SubTexture name="tll right0003" x="3193" y="1926" width="1584" height="1913"/>
-	<SubTexture name="tll right0004" x="3193" y="1926" width="1584" height="1913"/>
-	<SubTexture name="tll right0005" x="4787" y="1926" width="1584" height="1913"/>
-	<SubTexture name="tll right0006" x="4787" y="1926" width="1584" height="1913"/>
-	<SubTexture name="tll right0007" x="4787" y="1926" width="1584" height="1913"/>
-	<SubTexture name="tll left0000" x="5" y="3849" width="1584" height="1911"/>
-	<SubTexture name="tll left0001" x="1525" y="3849" width="1584" height="1911"/>
-	<SubTexture name="tll left0002" x="1525" y="3849" width="1584" height="1911"/>
-	<SubTexture name="tll left0003" x="3045" y="3849" width="1584" height="1911"/>
-	<SubTexture name="tll left0004" x="3045" y="3849" width="1584" height="1911"/>
-	<SubTexture name="tll left0005" x="4565" y="3849" width="1584" height="1911"/>
-	<SubTexture name="tll left0006" x="4565" y="3849" width="1584" height="1911"/>
-	<SubTexture name="tll left0007" x="4565" y="3849" width="1584" height="1911"/>
-	<SubTexture name="tll idle0000" x="6085" y="3849" width="1584" height="1911"/>
+	
+	<SubTexture name="tll down0000" x="2693" y="0" width="261" height="640" frameX="-254" frameY="-314" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll down0001" x="1746" y="852" width="262" height="643" frameX="-253" frameY="-311" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll down0002" x="1746" y="852" width="262" height="643" frameX="-253" frameY="-311" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll down0003" x="1477" y="852" width="269" height="660" frameX="-246" frameY="-294" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll down0004" x="1477" y="852" width="269" height="660" frameX="-246" frameY="-294" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll down0005" x="1477" y="852" width="269" height="660" frameX="-246" frameY="-294" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll down0006" x="1477" y="852" width="269" height="660" frameX="-246" frameY="-294" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll down0007" x="1477" y="852" width="269" height="660" frameX="-246" frameY="-294" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll up0000" x="2432" y="944" width="251" height="949" frameX="-272" frameY="-6" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll up0001" x="2432" y="0" width="261" height="944" frameX="-265" frameY="-11" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll up0002" x="2432" y="0" width="261" height="944" frameX="-265" frameY="-11" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll up0003" x="2124" y="929" width="299" height="934" frameX="-236" frameY="-21" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll up0004" x="2124" y="929" width="299" height="934" frameX="-236" frameY="-21" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll up0005" x="2124" y="0" width="308" height="929" frameX="-232" frameY="-26" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll up0006" x="2124" y="0" width="308" height="929" frameX="-232" frameY="-26" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll up0007" x="2124" y="0" width="308" height="929" frameX="-232" frameY="-26" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll right0000" x="786" y="830" width="650" height="513" frameX="-135" frameY="-443" frameWidth="792" frameHeight="956"/>
+	<SubTexture name="tll right0001" x="0" y="1596" width="651" height="512" frameX="-132" frameY="-444" frameWidth="792" frameHeight="956"/>
+	<SubTexture name="tll right0002" x="0" y="1596" width="651" height="512" frameX="-132" frameY="-444" frameWidth="792" frameHeight="956"/>
+	<SubTexture name="tll right0003" x="651" y="1596" width="650" height="512" frameX="-126" frameY="-444" frameWidth="792" frameHeight="956"/>
+	<SubTexture name="tll right0004" x="651" y="1596" width="650" height="512" frameX="-126" frameY="-444" frameWidth="792" frameHeight="956"/>
+	<SubTexture name="tll right0005" x="1301" y="1596" width="650" height="511" frameX="-121" frameY="-445" frameWidth="792" frameHeight="956"/>
+	<SubTexture name="tll right0006" x="1301" y="1596" width="650" height="511" frameX="-121" frameY="-445" frameWidth="792" frameHeight="956"/>
+	<SubTexture name="tll right0007" x="1301" y="1596" width="650" height="511" frameX="-121" frameY="-445" frameWidth="792" frameHeight="956"/>
+	<SubTexture name="tll left0000" x="0" y="0" width="786" height="794" frameX="-6" frameY="-158" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll left0001" x="0" y="794" width="735" height="802" frameX="-18" frameY="-150" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll left0002" x="0" y="794" width="735" height="802" frameX="-18" frameY="-150" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll left0003" x="786" y="0" width="691" height="830" frameX="-58" frameY="-123" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll left0004" x="786" y="0" width="691" height="830" frameX="-58" frameY="-123" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll left0005" x="1477" y="0" width="647" height="852" frameX="-102" frameY="-101" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll left0006" x="1477" y="0" width="647" height="852" frameX="-102" frameY="-101" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll left0007" x="1477" y="0" width="647" height="852" frameX="-102" frameY="-101" frameWidth="792" frameHeight="955"/>
+	<SubTexture name="tll idle0000" x="2693" y="640" width="207" height="627" frameX="-302" frameY="-328" frameWidth="792" frameHeight="955"/>
 </TextureAtlas>
