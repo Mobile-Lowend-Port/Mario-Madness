@@ -6,13 +6,12 @@ import flixel.FlxGame;
 import flixel.FlxState;
 import flixel.addons.transition.FlxTransitionableState;
 import openfl.Assets;
-import haxe.io.Path;
 import openfl.Lib;
 import openfl.display.FPS;
 import openfl.display.Sprite;
 import openfl.events.Event;
 import openfl.system.System;
-
+import cpp.vm.Gc;
 #if android
 import android.content.Context;
 import android.os.Build;
@@ -20,15 +19,17 @@ import android.os.Build;
 
 class Main extends Sprite {
 	public static var initialState:Class<FlxState> = TitleState; // The FlxState the game starts with.
-	public static var gameWidth:Int = 1280; // Width of the game in pixels (might be less / more in actual pixels depending on your zoom).
-	public static var gameHeight:Int = 720; // Height of the game in pixels (might be less / more in actual pixels depending on your zoom).
+	public static var gameWidth:Int = initialState == TitleState ? 921 : 1280; // Width of the game in pixels (might be less / more in actual pixels depending on your zoom).
+	public static var gameHeight:Int = initialState == TitleState ? 691 : 720; // Height of the game in pixels (might be less / more in actual pixels depending on your zoom).
 	var zoom:Float = -1; // If -1, zoom is automatically calculated to fit the window dimensions.
 	var framerate:Int = 60; // How many frames per second the game should run at.
 	var skipSplash:Bool = true; // Whether to skip the flixel splash screen that appears in release mode.
 	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
-	public static var skipNextDump:Bool = false;
 
 	public static var fpsVar:FPS;
+
+	public static var skipNextDump:Bool = false;
+	public static var forceNoVramSprites:Bool = #if (desktop && !web) false #else true #end;
 
 	public static function main():Void {
 		Lib.current.addChild(new Main());
@@ -37,19 +38,6 @@ class Main extends Sprite {
 	public function new() {
 		super();
 
-		#if android
-		if (VERSION.SDK_INT > 30)
-			Sys.setCwd(Path.addTrailingSlash(Context.getObbDir()));
-		else
-			Sys.setCwd(Path.addTrailingSlash(Context.getExternalFilesDir()));
-		#elseif ios
-		Sys.setCwd(System.documentsDirectory);
-		#end
-
-		#if mobile
-		Storage.copyNecessaryFiles();
-		#end
-		
 		if (stage != null) {
 			init();
 		}
@@ -67,7 +55,6 @@ class Main extends Sprite {
 	}
 
 	public function setupGame():Void {
-
 		#if !debug
 		initialState = TitleState;
 		#end
@@ -81,11 +68,25 @@ class Main extends Sprite {
 		
 		addChild(new FlxGame(gameWidth, gameHeight, initialState, framerate, framerate, skipSplash, startFullscreen));
 
-		FlxG.game.addChild(fpsVar);
+		FlxG.signals.preStateSwitch.add(function () {
+			if (!Main.skipNextDump) {
+				Paths.clearStoredMemory(true);
+				FlxG.bitmap.dumpCache();
+			}
+			clearMajor();
+		});
+		FlxG.signals.postStateSwitch.add(function () {
+			Paths.clearUnusedMemory();
+			clearMajor();
+			Main.skipNextDump = false;
+		});
+
+		addChild(fpsVar);
 		
 		#if html5
 		FlxG.autoPause = false;
 		#end
+
 		FlxG.signals.gameResized.add(onResizeGame);
 	}
 
@@ -114,5 +115,9 @@ class Main extends Sprite {
 			}
 		}
 	}
-}
 
+	public static function clearMajor() {
+		Gc.run(true);
+		Gc.compact();
+	}
+}
