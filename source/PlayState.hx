@@ -1190,7 +1190,7 @@ class PlayState extends MusicBeatState
 				starmanGF.antialiasing = ClientPrefs.globalAntialiasing;
 				add(starmanGF);
 
-				peachCuts = new BGSprite('characters/Peach_EXE_Cuts_New', -160, -100, 1, 1, ["PeachFalling"], true);
+				peachCuts = new BGSprite('characters/Peach_EXE_Cuts_New', -160, -100, 2, 2, ["PeachFalling"], true);
 				peachCuts.animation.addByPrefix('floats', "PeachFalling1", 24, true);
 				peachCuts.animation.addByPrefix('fall', "PeachFalling2", 24, false);
 				peachCuts.animation.addByPrefix('dies', "PeachDIES", 24, false);
