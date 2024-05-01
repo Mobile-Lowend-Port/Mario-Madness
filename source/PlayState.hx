@@ -3536,6 +3536,8 @@ class PlayState extends MusicBeatState
 				hallTLL1.animation.play('idle', true);
 				hallTLL1.updateHitbox();
 				hallTLL1.antialiasing = true;
+				hallTLL1.scale.x = 2;
+				hallTLL1.scale.y = 2;
 				hallTLL1.velocity.set(-2800, 0);
 				hallTLL1.alpha = 0.000001;
 
@@ -3543,7 +3545,7 @@ class PlayState extends MusicBeatState
 				hallTLL2 = new FlxBackdrop(X, -1170);
 				hallTLL2.frames = Paths.getSparrowAtlas('Too_Late_Luigi_Hallway');
 				hallTLL2.animation.addByPrefix('idle', "tll idle",   24, false);
-				hallTLL2.scale.set(0.8, 0.8);
+				hallTLL2.scale.set(1.4, 1.4);
 				hallTLL2.updateHitbox();
 				hallTLL2.antialiasing = true;
 				hallTLL2.velocity.set(-2240, 0);
@@ -3554,7 +3556,7 @@ class PlayState extends MusicBeatState
 				hallTLL3 = new FlxBackdrop(X, -1170);
 				hallTLL3.frames = Paths.getSparrowAtlas('Too_Late_Luigi_Hallway');
 				hallTLL3.animation.addByPrefix('idle', "tll idle",   24, false);
-				hallTLL3.scale.set(0.6, 0.6);
+				hallTLL3.scale.set(1.2, 1.2);
 				hallTLL3.updateHitbox();
 				hallTLL3.antialiasing = true;
 				hallTLL3.velocity.set(-1680, 0);
