@@ -85,12 +85,12 @@ class Main extends Sprite {
 		FlxG.signals.preStateSwitch.add(function () {
 			if (!Main.skipNextDump) {
 				Paths.clearStoredMemory(true);
+				Paths.clearUnusedMemory();
 				FlxG.bitmap.dumpCache();
 			}
 			clearMajor();
 		});
 		FlxG.signals.postStateSwitch.add(function () {
-			Paths.clearUnusedMemory();
 			clearMajor();
 			Main.skipNextDump = false;
 		});
