@@ -212,7 +212,7 @@ class StoryMenuState extends MusicBeatSubstate
 
 		#if android
 		addVirtualPad(NONE, A);
-		addPadCamera();
+		addVirtualPadCamera(false);
 		#end
 		
 		super.create();
@@ -379,7 +379,7 @@ class StoryMenuState extends MusicBeatSubstate
 		PlayState.storyWeek = 0;
 		PlayState.campaignScore = 0;
 		PlayState.campaignMisses = 0;
-		new FlxTimer().start(3, function(tmr:FlxTimer)
+		new FlxTimer().start(2.8, function(tmr:FlxTimer)
 		{
 			FlxG.camera.alpha = 0;
 			LoadingState.loadAndSwitchState(new PlayState(), true);
