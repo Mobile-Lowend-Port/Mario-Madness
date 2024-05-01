@@ -55,8 +55,7 @@ class PatchNotes extends MusicBeatState
 		
 		DiscordClient.changePresence("In the Menus", null);
 		#end
-		Paths.clearStoredMemory();
-		Paths.clearUnusedMemory();
+	
 		FlxG.mouse.visible = true;
 
 		FlxG.camera.setFilters([new ShaderFilter(ntsc = new NTSCGlitch(0.4)), new ShaderFilter(staticShader = new TVStatic())]);
