@@ -1927,6 +1927,7 @@ class PlayState extends MusicBeatState
 					starmanGF.animation.addByIndices('danceLeft', 'GFIdle', [30,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14], "", 24, false);
 					starmanGF.animation.addByPrefix('sad', "GFMiss", 24, false);
 					starmanGF.antialiasing = ClientPrefs.globalAntialiasing;
+					starmanGF.scale.set(2, 2);
 					add(starmanGF);
 
 					lluvia = new BGSprite('mario/LuigiBeta/old/Beta_Luigi_Rain_V1', -170, 50, ['RainLuigi'], true);
