@@ -26,7 +26,8 @@ class ClientPrefs {
 	public static var ghostTapping:Bool = true;
 	public static var hideTime:Bool = false;
 	public static var vramSprites:Bool = true;
-
+	public static var hitboxalpha:Float = 0.15;
+	public static var padalpha:Float = 0.6;
 	public static var filtro85:Bool = true;
 	public static var pauseStart:Bool = false;
 	public static var noVirtual:Bool = true;
@@ -117,6 +118,8 @@ class ClientPrefs {
 		FlxG.save.data.framerate = framerate;
 		FlxG.save.data.cursing = cursing;
 		FlxG.save.data.violence = violence;
+		FlxG.save.data.hitboxalpha = hitboxalpha;
+		FlxG.save.data.padalpha = padalpha;
 		FlxG.save.data.camZooms = camZooms;
 		FlxG.save.data.noteOffset = noteOffset;
 		FlxG.save.data.menuBG = menuBG;
@@ -170,6 +173,12 @@ class ClientPrefs {
 		}
 		if (FlxG.save.data.globalAntialiasing != null) {
 			globalAntialiasing = FlxG.save.data.globalAntialiasing;
+		}
+		if(FlxG.save.data.hitboxalpha != null) {
+			hitboxalpha = FlxG.save.data.hitboxalpha;
+		}
+		if(FlxG.save.data.padalpha != null) {
+			padalpha = FlxG.save.data.padalpha;
 		}
 		if (FlxG.save.data.noteSplashes != null) {
 			noteSplashes = FlxG.save.data.noteSplashes;
