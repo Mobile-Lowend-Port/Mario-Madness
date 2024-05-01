@@ -5607,10 +5607,10 @@ class PlayState extends MusicBeatState
 		timeBarBG.cameras = [camHUD];
 		timeTxt.cameras = [camHUD];
 
-        #if android
-		addAndroidControls();
-		androidc.visible = false;
-		#end
+   #if mobile
+   addMobileControls(false);
+   mobileControls.visible = false;
+   #end
 
 		if (noHUD)
 		{
@@ -6246,7 +6246,7 @@ class PlayState extends MusicBeatState
 		if (ret != FunkinLua.Function_Stop)
 		{
 	    #if android
-		androidc.visible = true;
+		mobileControls.visible = true;
 		#end
 			generateStaticArrows(0);
 			generateStaticArrows(1);
