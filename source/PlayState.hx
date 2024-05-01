@@ -813,8 +813,6 @@ class PlayState extends MusicBeatState
 
 	override public function create()
 	{
-		Paths.clearStoredMemory();
-		
 		instance = this;
 
 		if (FlxG.sound.music != null)
@@ -5888,8 +5886,6 @@ class PlayState extends MusicBeatState
 		#end
 
 		callOnLuas('onCreatePost', []);
-
-		Paths.clearUnusedMemory();
 
                 super.create();
 	}
