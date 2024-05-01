@@ -339,7 +339,7 @@ class WarpState extends MusicBeatState
 		//	trace(e.message);
 		//	}
 	        #if android
-		addVirtualPad(FULL, A_B);
+		addVirtualPad(LEFT_FULL, A_B);
 		#end
 	}
 
@@ -1143,8 +1143,8 @@ class WorldState extends MusicBeatSubstate
 		}
 	
 	        #if android
-		addVirtualPad(FULL, A_B);
-		addPadCamera();
+		addVirtualPad(LEFT_FULL, A_B);
+		addVirtualPadCamera(false);
 		#end
 	}
 
@@ -2014,8 +2014,8 @@ class UltraState extends MusicBeatSubstate
 
 		//camWorld.zoom = 0.3333;
 	        #if android
-		addVirtualPad(FULL, A_B);
-		addPadCamera();
+		addVirtualPad(LEFT_FULL, A_B);
+		addVirtualPadCamera(false);
 		#end
 	}
 	var mov:Float = 1;
