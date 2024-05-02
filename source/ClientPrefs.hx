@@ -10,6 +10,7 @@ class ClientPrefs {
 	// TO DO: Redo ClientPrefs in a way that isn't too stupid
 	// yeah good idea? (its still stupid in the latest psych build)
 	public static var downScroll:Bool = false;
+	public static var cacheOnGPU:Bool = false;
 	public static var middleScroll:Bool = false;
 	public static var showFPS:Bool = true;
 	public static var flashing:Bool = true;
@@ -115,6 +116,7 @@ class ClientPrefs {
 		FlxG.save.data.globalAntialiasing = globalAntialiasing;
 		FlxG.save.data.noteSplashes = noteSplashes;
 		FlxG.save.data.lowQuality = lowQuality;
+		FlxG.save.data.cacheOnGPU = cacheOnGPU;
 		FlxG.save.data.framerate = framerate;
 		FlxG.save.data.cursing = cursing;
 		FlxG.save.data.violence = violence;
@@ -182,6 +184,9 @@ class ClientPrefs {
 		}
 		if (FlxG.save.data.noteSplashes != null) {
 			noteSplashes = FlxG.save.data.noteSplashes;
+		}
+		if(FlxG.save.data.cacheOnGPU != null) {
+			cacheOnGPU = FlxG.save.data.cacheOnGPU;
 		}
 		if (FlxG.save.data.lowQuality != null) {
 			lowQuality = FlxG.save.data.lowQuality;
