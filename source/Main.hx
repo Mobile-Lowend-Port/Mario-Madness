@@ -12,7 +12,6 @@ import openfl.display.FPS;
 import openfl.display.Sprite;
 import openfl.events.Event;
 import openfl.system.System;
-import cpp.vm.Gc;
 #if android
 import android.content.Context;
 import android.os.Build;
@@ -87,11 +86,9 @@ class Main extends Sprite {
 				Paths.clearStoredMemory(true);
 				FlxG.bitmap.dumpCache();
 			}
-			clearMajor();
 		});
 		FlxG.signals.postStateSwitch.add(function () {
 			Paths.clearUnusedMemory();
-			clearMajor();
 			Main.skipNextDump = false;
 		});
 
@@ -101,37 +98,25 @@ class Main extends Sprite {
 		FlxG.autoPause = false;
 		#end
 
-		FlxG.signals.gameResized.add(onResizeGame);
-	}
-
-	function onResizeGame(w:Int, h:Int) {
-		fixShaderSize(this);
-		if (FlxG.game != null) fixShaderSize(FlxG.game);
-
-		if (FlxG.cameras == null) return;
-		for (cam in FlxG.cameras.list) {
-			@:privateAccess
-			if (cam != null && (cam._filters != null || cam._filters != []))
-				fixShaderSize(cam.flashSprite);
-		}	
-	}
-
-	function fixShaderSize(sprite:Sprite) // Shout out to Ne_Eo for bringing this to my attention
-	{
-		@:privateAccess {
-			if (sprite != null)
-			{
-				sprite.__cacheBitmap = null;
-				sprite.__cacheBitmapData = null;
-				sprite.__cacheBitmapData2 = null;
-				sprite.__cacheBitmapData3 = null;
-				sprite.__cacheBitmapColorTransform = null;
+		FlxG.signals.gameResized.add(function (w, h) {
+			//if(fpsVar != null)
+				//fpsVar.positionFPS(10, 3, Math.min(Lib.current.stage.stageWidth / FlxG.width, Lib.current.stage.stageHeight / FlxG.height));
+		     if (FlxG.cameras != null) {
+			   for (cam in FlxG.cameras.list) {
+				if (cam != null && cam.filters != null)
+					resetSpriteCache(cam.flashSprite);
+			   }
 			}
-		}
+
+			if (FlxG.game != null)
+			resetSpriteCache(FlxG.game);
+		});
 	}
 
-	public static function clearMajor() {
-		Gc.run(true);
-		Gc.compact();
+	static function resetSpriteCache(sprite:Sprite):Void {
+		@:privateAccess {
+		        sprite.__cacheBitmap = null;
+			sprite.__cacheBitmapData = null;
+		}
 	}
 }
