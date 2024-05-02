@@ -240,13 +240,6 @@ class Paths
 		#end
 	}
 
-	inline static public function image(key:String, ?library:String):FlxGraphic
-	{
-		// streamlined the assets process more
-		var returnAsset:FlxGraphic = returnGraphic(key, library);
-		return returnAsset;
-	}
-
 	static public function getTextFromFile(key:String, ?ignoreMods:Bool = false):String
 	{
 		#if MODS_ALLOWED
@@ -323,40 +316,78 @@ class Paths
 
 	// completely rewritten asset loading? fuck!
 	public static var currentTrackedAssets:Map<String, FlxGraphic> = [];
-	public static function returnGraphic(key:String, ?library:String) {
+	static public function image(key:String, ?library:String = null, ?allowGPU:Bool = true):FlxGraphic
+	{
+		var bitmap:BitmapData = null;
+		var file:String = null;
+
 		#if MODS_ALLOWED
-		var modKey:String = modsImages(key);
-		if(FileSystem.exists(modKey)) {
-			if(!currentTrackedAssets.exists(modKey)) {
-				var newBitmap:BitmapData = BitmapData.fromFile(modKey);
-				var newGraphic:FlxGraphic = FlxGraphic.fromBitmapData(newBitmap, false, modKey);
-				newGraphic.persist = true;
-				currentTrackedAssets.set(modKey, newGraphic);
-			}
-			localTrackedAssets.push(modKey);
-			return currentTrackedAssets.get(modKey);
+		file = modsImages(key);
+		if (currentTrackedAssets.exists(file))
+		{
+			localTrackedAssets.push(file);
+			return currentTrackedAssets.get(file);
 		}
+		else if (FileSystem.exists(file))
+			bitmap = BitmapData.fromFile(file);
+		else
 		#end
-
-		var path = getPath('images/$key.png', IMAGE, library);
-		//trace(path);
-		if (OpenFlAssets.exists(path, IMAGE)) {
-			if(!currentTrackedAssets.exists(path)) {
-			        var newGraphic:FlxGraphic;
-
-				if (ClientPrefs.vramSprites)
-					newGraphic = FlxGraphic.fromBitmapData(GPUFunctions.getBitmaponGPU(path), false, path, false);
-				else
-					newGraphic = FlxG.bitmap.add(path, false, path);
-				newGraphic.persist = true;
-				currentTrackedAssets.set(path, newGraphic);
+		{
+			file = getPath('images/$key.png', IMAGE, library);
+			if (currentTrackedAssets.exists(file))
+			{
+				localTrackedAssets.push(file);
+				return currentTrackedAssets.get(file);
 			}
-			localTrackedAssets.push(path);
-			return currentTrackedAssets.get(path);
+			else if (OpenFlAssets.exists(file, IMAGE))
+				bitmap = OpenFlAssets.getBitmapData(file);
 		}
-		trace('oh no ( ${path} ) returning null NOOOO');
+
+		if (bitmap != null) return cacheBitmap(file, bitmap, allowGPU);
+
+		trace('oh no its returning null NOOOO ($file)');
 		return null;
 	}
+
+        // Caching stuff
+	public static function cacheBitmap(file:String, ?bitmap:BitmapData, ?allowGPU:Bool = true):FlxGraphic
+	{
+		if (bitmap == null)
+		{
+			#if MODS_ALLOWED
+			if (FileSystem.exists(file))
+				bitmap = BitmapData.fromFile(file);
+			else
+			#end
+			if (OpenFlAssets.exists(file, IMAGE))
+				bitmap = OpenFlAssets.getBitmapData(file);
+
+			if (bitmap == null) return null;
+		}
+
+		if (allowGPU && ClientPrefs.cacheOnGPU && bitmap.image != null)
+		@:privateAccess {
+			bitmap.lock();
+			if (bitmap.__texture == null) {
+				bitmap.image.premultiplied = true;
+				bitmap.getTexture(FlxG.stage.context3D);
+			}
+			bitmap.getSurface();
+			bitmap.disposeImage();
+			bitmap.image.data = null;
+			bitmap.image = null;
+			bitmap.readable = true;
+		}
+
+		var graph:FlxGraphic = FlxGraphic.fromBitmapData(bitmap, false, file);
+		graph.persist = true;
+		graph.destroyOnNoUse = false;
+
+		currentTrackedAssets.set(file, graph);
+		localTrackedAssets.push(file);
+		return graph;
+	}
+
 
 	public static var currentTrackedSounds:Map<String, Sound> = [];
 	public static function returnSound(path:String, key:String, ?library:String) {
