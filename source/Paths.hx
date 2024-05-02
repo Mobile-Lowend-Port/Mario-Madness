@@ -10,7 +10,7 @@ import flixel.math.FlxPoint;
 import flixel.math.FlxRect;
 import haxe.Json;
 import haxe.xml.Access;
-import lime.utils.Assets;
+import openfl.utils.Assets;
 import openfl.display.BitmapData;
 import openfl.geom.Rectangle;
 import openfl.system.System;
