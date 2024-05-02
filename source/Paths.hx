@@ -70,7 +70,6 @@ class Paths
 				var obj = currentTrackedAssets.get(key);
 				@:privateAccess
 				if (obj != null) {
-					GPUFunctions.disposeTexturesByKey(key);
 					openfl.Assets.cache.removeBitmapData(key);
 					FlxG.bitmap._cache.remove(key);
 					obj.destroy();
@@ -91,7 +90,6 @@ class Paths
 		{
 			var obj = FlxG.bitmap._cache.get(key);
 			if (obj != null && !currentTrackedAssets.exists(key)) {
-				GPUFunctions.disposeTexturesByKey(key);
 				openfl.Assets.cache.removeBitmapData(key);
 				FlxG.bitmap._cache.remove(key);
 				obj.destroy();
@@ -278,7 +276,8 @@ class Paths
 	inline static public function getSparrowAtlas(key:String, ?library:String):FlxAtlasFrames
 	{
 		#if MODS_ALLOWED
-		var imageLoaded:FlxGraphic = returnGraphic(key);
+		// var imageLoaded:FlxGraphic = returnGraphic(key); //Defautl precache
+		var imageLoaded:FlxGraphic = image(key); //Precache with GPU Support
 		var xmlExists:Bool = false;
 		if(FileSystem.exists(modsXml(key))) {
 			xmlExists = true;
@@ -290,11 +289,11 @@ class Paths
 		#end
 	}
 
-
 	inline static public function getPackerAtlas(key:String, ?library:String)
 	{
 		#if MODS_ALLOWED
-		var imageLoaded:FlxGraphic = returnGraphic(key);
+		// var imageLoaded:FlxGraphic = returnGraphic(key); //Defautl precache
+		var imageLoaded:FlxGraphic = image(key); //Precache with GPU Support
 		var txtExists:Bool = false;
 		if(FileSystem.exists(modsTxt(key))) {
 			txtExists = true;
