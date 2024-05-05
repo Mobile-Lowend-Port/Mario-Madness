@@ -9616,7 +9616,7 @@ class PlayState extends MusicBeatState
 						iconGF.animation.add("win", [0], 10, true);
 						iconGF.animation.add("lose", [1], 10, true);
 						extraTween.push(FlxTween.tween(peachCuts, {y: -480}, 1.25, {ease: FlxEase.quadInOut}));
-						extraTween.push(FlxTween.tween(peachCuts, {x: -05}, 1.5, {ease: FlxEase.backOut, onComplete: function(twn:FlxTween)
+						extraTween.push(FlxTween.tween(peachCuts, {x: -105}, 1.5, {ease: FlxEase.backOut, onComplete: function(twn:FlxTween)
 							{
 								extraTween.push(FlxTween.tween(peachCuts, {y: -30}, 0.4, {startDelay: 0.1, ease: FlxEase.backIn, onComplete: function(twn:FlxTween)
 									{
