@@ -1922,7 +1922,7 @@ class PlayState extends MusicBeatState
 					scaryfloor.antialiasing = ClientPrefs.globalAntialiasing;
 					add(scaryfloor);
 
-					starmanGF = new BGSprite('characters/Beta_Luigi_GF_Assets', 570, 100, 1, 1, ["GFIdle"], false);
+					starmanGF = new BGSprite('characters/Beta_Luigi_GF_Assets', 570, 140, 1, 1, ["GFIdle"], false);
 					starmanGF.animation.addByIndices('danceRight', 'GFIdle', [15,16,17,18,19,20,21,22,23,24,25,26,27,28,29], "", 24, false);
 					starmanGF.animation.addByIndices('danceLeft', 'GFIdle', [30,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14], "", 24, false);
 					starmanGF.animation.addByPrefix('sad', "GFMiss", 24, false);
@@ -7866,7 +7866,7 @@ class PlayState extends MusicBeatState
 					extraTween.push(FlxTween.tween(boyfriendGroup, {x: boyfriendGroup.x + 40}, 5, {ease: FlxEase.quadInOut, type: PINGPONG}));
 
 					extraTween.push(FlxTween.tween(starmanGF, {y: gfGroup.y + 40}, 2, {startDelay: 0.2, ease: FlxEase.quadInOut, type: PINGPONG}));
-					extraTween.push(FlxTween.tween(starmanGF, {x: gfGroup.x - 20}, 4, {startDelay: 0.2, ease: FlxEase.quadInOut, type: PINGPONG}));
+					extraTween.push(FlxTween.tween(starmanGF, {x: gfGroup.x - 0}, 4, {startDelay: 0.2, ease: FlxEase.quadInOut, type: PINGPONG}));
 					starmanGF.alpha = 0;
 					boyfriendGroup.alpha = 0;
 					health = 2;
@@ -9615,9 +9615,9 @@ class PlayState extends MusicBeatState
 						iconGF.animation.add("win", [0], 10, true);
 						iconGF.animation.add("lose", [1], 10, true);
 						extraTween.push(FlxTween.tween(peachCuts, {y: -380}, 1.25, {ease: FlxEase.quadInOut}));
-						extraTween.push(FlxTween.tween(peachCuts, {x: -235}, 1.5, {ease: FlxEase.backOut, onComplete: function(twn:FlxTween)
+						extraTween.push(FlxTween.tween(peachCuts, {x: -105}, 1.5, {ease: FlxEase.backOut, onComplete: function(twn:FlxTween)
 							{
-								extraTween.push(FlxTween.tween(peachCuts, {y: -200}, 0.4, {startDelay: 0.1, ease: FlxEase.backIn, onComplete: function(twn:FlxTween)
+								extraTween.push(FlxTween.tween(peachCuts, {y: -100}, 0.4, {startDelay: 0.1, ease: FlxEase.backIn, onComplete: function(twn:FlxTween)
 									{
 										peachCuts.animation.play('fall');
 										eventTimers.push(new FlxTimer().start(0.5833, function(tmr:FlxTimer)
