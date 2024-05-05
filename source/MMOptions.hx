@@ -88,14 +88,11 @@ class MMOptions extends MusicBeatSubstate
 
 		verText.alpha = 0; verText.y += 20;
 		FlxTween.tween(verText, {y: verText.y - 20, alpha: 1}, 1, {ease: FlxEase.circOut, startDelay: .5});
-
-		if(qqqeb9)
-		{
+		
 		#if android
 		addVirtualPad(UP_DOWN, A_B_C);
 		addVirtualPadCamera(false);
 		#end
-		}
 		
 		super.create();
 	}
@@ -151,22 +148,22 @@ class MMOptions extends MusicBeatSubstate
 			switch (options[curSelected])
 			{
 				case 'Notes':
-					qqqeb9 = false;
+					removeVirtualPad();
 					openSubState(new NotesSubstate());
 
 				case 'Controls':
-					qqqeb9 = false;
+					removeVirtualPad();
 					openSubState(new ControlsSubstate());
 
 				case 'Preferences':
-					qqqeb9 = false;
+					removeVirtualPad();
 					openSubState(new PreferencesSubstate());
 
 				case 'Mario Options':
-					qqqeb9 = false;
+					removeVirtualPad();
 					openSubState(new MarioSubstate());
 				case 'Delete Data':
-					qqqeb9 = false;
+					removeVirtualPad();
 					openSubState(new DeleteSubstate());
 			}
 		}
@@ -1713,6 +1710,11 @@ class DeleteSubstate extends MusicBeatSubstate
 			rotButton.x += 400;
 			rotButton.visible = false;
 			add(rotButton);
+
+		#if android
+		addVirtualPad(NONE, A_B);
+		#end
+			
 		}
 
 	override function update(elapsed:Float)
@@ -1722,7 +1724,7 @@ class DeleteSubstate extends MusicBeatSubstate
 			}else{
 				timer = 0;
 			}
-			if (controls.BACK #if android || FlxG.android.justReleased.BACK #end && delPhase != 4)
+			if (controls.BACK && delPhase != 4)
 				{
 					FlxG.sound.play(Paths.sound('cancelMenu'));
 					FlxG.mouse.visible = false;
@@ -1730,7 +1732,7 @@ class DeleteSubstate extends MusicBeatSubstate
 			MMOptions.qqqeb9 = true;
 				}
 			
-			if(FlxG.mouse.justPressed && delPhase <= 3 && timer == 0 && cat.angle == 0){
+			if(controls.ACCEPT && delPhase <= 3 && timer == 0 && cat.angle == 0){
 				switch(delPhase){
 					case 0:
 						timer = 1;
