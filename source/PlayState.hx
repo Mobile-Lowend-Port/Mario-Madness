@@ -3511,6 +3511,7 @@ class PlayState extends MusicBeatState
 				gunShotPico = new BGSprite('characters/Too_Late_Pico_ass_sets_v2', boyfriendGroup.x - 290, boyfriendGroup.y + 195, 1, 1, ['PicoShoot']);
 				gunShotPico.animation.addByPrefix('Shoot', 'PicoShoot', 40, false);
 				gunShotPico.alpha = 0.0001;
+				gunShotPico.scale.set(2.0, 2.0);
 				add(gunShotPico);
 
 				var fogblack:FlxSprite = new FlxSprite().loadGraphic(Paths.image('modstuff/126'));
@@ -3539,7 +3540,7 @@ class PlayState extends MusicBeatState
 				hallTLL1.antialiasing = true;
 				hallTLL1.scale.x = 2;
 				hallTLL1.scale.y = 2;
-				hallTLL1.velocity.set(-2800, 0);
+				hallTLL1.velocity.set(-4800, 0);
 				hallTLL1.alpha = 0.000001;
 
 
@@ -9614,10 +9615,10 @@ class PlayState extends MusicBeatState
 						iconGF.loadGraphic(Paths.image('icons/icon-yoshiex'), true, Math.floor(iconGF.width), Math.floor(iconGF.height));
 						iconGF.animation.add("win", [0], 10, true);
 						iconGF.animation.add("lose", [1], 10, true);
-						extraTween.push(FlxTween.tween(peachCuts, {y: -380}, 1.25, {ease: FlxEase.quadInOut}));
-						extraTween.push(FlxTween.tween(peachCuts, {x: -105}, 1.5, {ease: FlxEase.backOut, onComplete: function(twn:FlxTween)
+						extraTween.push(FlxTween.tween(peachCuts, {y: -480}, 1.25, {ease: FlxEase.quadInOut}));
+						extraTween.push(FlxTween.tween(peachCuts, {x: -05}, 1.5, {ease: FlxEase.backOut, onComplete: function(twn:FlxTween)
 							{
-								extraTween.push(FlxTween.tween(peachCuts, {y: -100}, 0.4, {startDelay: 0.1, ease: FlxEase.backIn, onComplete: function(twn:FlxTween)
+								extraTween.push(FlxTween.tween(peachCuts, {y: -30}, 0.4, {startDelay: 0.1, ease: FlxEase.backIn, onComplete: function(twn:FlxTween)
 									{
 										peachCuts.animation.play('fall');
 										eventTimers.push(new FlxTimer().start(0.5833, function(tmr:FlxTimer)
