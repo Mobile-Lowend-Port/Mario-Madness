@@ -460,7 +460,7 @@ class MainMenuState extends MusicBeatState {
 			(1/30)*240*elapsed);
 
 		fog.scale.set(1/FlxG.camera.zoom, 1/FlxG.camera.zoom);
-		estatica.scale.set(2/FlxG.camera.zoom, 2/FlxG.camera.zoom);
+		estatica.scale.set(4/FlxG.camera.zoom, 4/FlxG.camera.zoom);
 
 		if (ntsc != null) ntsc.time.value = [fullTimer];
 
