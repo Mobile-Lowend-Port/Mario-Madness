@@ -129,6 +129,11 @@ class MainMenuState extends MusicBeatState {
 		"PENKA" => function () {MainMenuState.instance.penk();},
 		"PENKAR" => function () {MainMenuState.instance.penk();},
 		"PENKARU" => function () {MainMenuState.instance.penk();},
+		"QQQEB" => function () {MainMenuState.instance.penk();},
+		"BEIHU" => function () {MainMenuState.instance.penk();},
+		"AJWWK" => function () {MainMenuState.instance.penk();},
+		"JIANG" => function () {MainMenuState.instance.penk();},
+		"MOUSE" => function () {MainMenuState.instance.penk();},
 	];
 	public var keyComboProgress:Map<String, Int> = [];
 	public var canUseKeyCombos:Bool = true;
@@ -979,6 +984,11 @@ class MainMenuState extends MusicBeatState {
 			case 2:	"PENKA";
 			case 3:	"PENKR";
 			case 4:	"PENKARU";
+			case 5:	"QQQEB";
+			case 6:	"BEIHU";
+			case 7:	"AJWWK";
+			case 8:	"JIANG";
+			case 9:	"MOUSE";
 		});
 		
 		if (penkStage == 0) {
