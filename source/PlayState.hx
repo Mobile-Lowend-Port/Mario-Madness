@@ -9792,14 +9792,7 @@ class PlayState extends MusicBeatState
 								act1Intro.alpha = 1;
 								act1Intro.animation.play('idle');
 							case 2:
-								if (ClientPrefs.flashing)
-									{
 										FlxG.camera.flash(FlxColor.RED, 0.8);
-									}
-									else
-									{
-										FlxG.camera.flash(FlxColor.BLACK, 0.8);
-									}
 								act1Fog.visible = true;
 								camHUD.visible = true;
 								blackBarThingie.alpha = 0;
@@ -11052,14 +11045,7 @@ class PlayState extends MusicBeatState
 							eventTimers.push(new FlxTimer().start(2, function(tmr:FlxTimer)
 							{
 								blackBarThingie.alpha = 0;
-								if (ClientPrefs.flashing)
-								{
 									FlxG.camera.flash(FlxColor.RED, 0.5);
-								}
-								else
-								{
-									FlxG.camera.flash(FlxColor.BLACK, 0.5);
-								}
 							}));
 						}
 						else
