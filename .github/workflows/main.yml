@@ -60,7 +60,6 @@ jobs:
           haxelib install lime 8.0.2
           haxelib install openfl 9.2.0
           haxelib install flixel 5.3.1
-          haxelib remove line
           haxelib install flixel-tools
           haxelib install flixel-ui
           haxelib install flixel-addons 3.1.1
@@ -83,6 +82,8 @@ jobs:
           haxelib set openfl 9.2.0
           haxelib set flixel 5.3.1
           haxelib set flixel-addons 3.1.1
+        env:
+          ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
       - name: Compile
         run: haxelib run lime build android -D NO_PRECOMPILED_HEADERS --app-version="4.0.0-${{ github.run_id}}"
       
