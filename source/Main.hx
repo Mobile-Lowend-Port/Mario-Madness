@@ -7,6 +7,7 @@ import flixel.FlxState;
 import flixel.addons.transition.FlxTransitionableState;
 import openfl.Assets;
 import openfl.Lib;
+import haxe.io.Path;
 import openfl.display.FPS;
 import openfl.display.Sprite;
 import openfl.events.Event;
