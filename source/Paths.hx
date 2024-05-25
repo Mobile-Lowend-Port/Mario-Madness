@@ -10,7 +10,7 @@ import flixel.math.FlxPoint;
 import flixel.math.FlxRect;
 import haxe.Json;
 import haxe.xml.Access;
-import openfl.utils.Assets;
+import lime.utils.Assets;
 import openfl.display.BitmapData;
 import openfl.geom.Rectangle;
 import openfl.system.System;
@@ -60,7 +60,7 @@ class Paths
 		'assets/shared/music/tea-time.$SOUND_EXT',
 	];
 	/// haya I love you for the base cache dump I took to the max
-	public static function clearUnusedMemory() {	    
+        public static function clearUnusedMemory() {
 		// clear non local assets in the tracked assets list
 		for (key in currentTrackedAssets.keys()) {
 			// if it is not currently contained within the used local assets
@@ -87,7 +87,7 @@ class Paths
 
 	// define the locally tracked assets
 	public static var localTrackedAssets:Array<String> = [];
-	public static function clearStoredMemory(?cleanUnused:Bool = false) {	
+	public static function clearStoredMemory(?cleanUnused:Bool = false) {
 		// clear anything not in the tracked assets list
 		@:privateAccess
 		for (key in FlxG.bitmap._cache.keys())
@@ -280,8 +280,7 @@ class Paths
 	inline static public function getSparrowAtlas(key:String, ?library:String):FlxAtlasFrames
 	{
 		#if MODS_ALLOWED
-		// var imageLoaded:FlxGraphic = returnGraphic(key); //Defautl precache
-		var imageLoaded:FlxGraphic = image(key); //Precache with GPU Support
+		var imageLoaded:FlxGraphic = image(key);
 		var xmlExists:Bool = false;
 		if(FileSystem.exists(modsXml(key))) {
 			xmlExists = true;
@@ -293,11 +292,11 @@ class Paths
 		#end
 	}
 
+
 	inline static public function getPackerAtlas(key:String, ?library:String)
 	{
 		#if MODS_ALLOWED
-		// var imageLoaded:FlxGraphic = returnGraphic(key); //Defautl precache
-		var imageLoaded:FlxGraphic = image(key); //Precache with GPU Support
+		var imageLoaded:FlxGraphic = image(key);
 		var txtExists:Bool = false;
 		if(FileSystem.exists(modsTxt(key))) {
 			txtExists = true;
@@ -352,7 +351,7 @@ class Paths
 		return null;
 	}
 
-        // Caching stuff
+	// Caching stuff
 	public static function cacheBitmap(file:String, ?bitmap:BitmapData, ?allowGPU:Bool = true):FlxGraphic
 	{
 		if (bitmap == null)
@@ -391,15 +390,10 @@ class Paths
 		return graph;
 	}
 
-
 	public static var currentTrackedSounds:Map<String, Sound> = [];
-	public static function returnSound(path:Null<String>, key:String, ?library:String) {
+	public static function returnSound(path:String, key:String, ?library:String) {
 		#if MODS_ALLOWED
-		var modLibPath:String = '';
-		if (library != null) modLibPath = '$library/';
-		if (path != null) modLibPath += '$path/';
-
-		var file:String = modsSounds(modLibPath, key);
+		var file:String = modsSounds(path, key);
 		if(FileSystem.exists(file)) {
 			if(!currentTrackedSounds.exists(file)) {
 				currentTrackedSounds.set(file, Sound.fromFile(file));
@@ -408,20 +402,21 @@ class Paths
 			return currentTrackedSounds.get(file);
 		}
 		#end
-
 		// I hate this so god damn much
-		var gottenPath:String = '$key.$SOUND_EXT';
-		if(path != null) gottenPath = '$path/$gottenPath';
-		gottenPath = getPath(gottenPath, SOUND, library);
+		var gottenPath:String = getPath('$path/$key.$SOUND_EXT', SOUND, library);
 		gottenPath = gottenPath.substring(gottenPath.indexOf(':') + 1, gottenPath.length);
 		// trace(gottenPath);
 		if(!currentTrackedSounds.exists(gottenPath))
+		#if MODS_ALLOWED
+			currentTrackedSounds.set(gottenPath, Sound.fromFile(gottenPath));
+		#else
 		{
-			var retKey:String = (path != null) ? '$path/$key' : key;
-			retKey = ((path == 'songs') ? 'songs:' : '') + getPath('$retKey.$SOUND_EXT', SOUND, library);
-			if(Assets.exists(retKey, SOUND))
-				currentTrackedSounds.set(gottenPath, Assets.getSound(retKey));
+			var folder:String = '';
+			if(path == 'songs') folder = 'songs:';
+
+			currentTrackedSounds.set(gottenPath, OpenFlAssets.getSound(folder + getPath('$path/$key.$SOUND_EXT', SOUND, library)));
 		}
+		#end
 		localTrackedAssets.push(gottenPath);
 		return currentTrackedSounds.get(gottenPath);
 	}
