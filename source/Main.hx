@@ -48,6 +48,15 @@ class Main extends Sprite {
 	public function new() {
 		super();
 
+		#if android
+		if (VERSION.SDK_INT > 30)
+			Sys.setCwd(Path.addTrailingSlash(Context.getObbDir()));
+		else
+			Sys.setCwd(Path.addTrailingSlash(Context.getExternalFilesDir()));
+		#elseif ios
+		Sys.setCwd(System.documentsDirectory);
+		#end
+		
 		if (stage != null) {
 			init();
 		}
@@ -65,20 +74,9 @@ class Main extends Sprite {
 	}
 
 	public function setupGame():Void {
-		#if android
-		if (VERSION.SDK_INT > 30)
-			Sys.setCwd(Path.addTrailingSlash(Context.getObbDir()));
-		else
-			Sys.setCwd(Path.addTrailingSlash(Context.getExternalFilesDir()));
-		#elseif ios
-		Sys.setCwd(System.documentsDirectory);
-		#end
-
 		#if mobile
 		Storage.copyNecessaryFiles();
 		#end
-		
-		Lib.application.window.onClose.add(PlayState.onWinClose);
 
 		#if !debug
 		initialState = TitleState;
